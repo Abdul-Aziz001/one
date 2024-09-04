@@ -1,0 +1,205 @@
+/* Сброс стилей по умолчанию */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Базовые стили для тела страницы */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding-top: 60px; /* для компенсации фиксированного хедера */
+}
+
+/* Контейнер для ограничения ширины контента */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Стили для шапки сайта */
+header {
+    background-color: #007BFF;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .btn {
+    background-color: #ffc107;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+header .btn:hover {
+    background-color: #e0a800;
+}
+
+/* Стили для главного блока */
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #ffc107;
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.hero .btn:hover {
+    background-color: #e0a800;
+}
+
+/* Стили для блока с информацией */
+.info {
+    padding: 50px 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.info h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Стили для блока с преимуществами */
+.features {
+    padding: 50px 0;
+    background-color: #e9ecef;
+    color: #333;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.features ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.features ul li {
+    width: 30%;
+    font-size: 18px;
+}
+
+.features ul li::before {
+    content: "✔";
+    color: #007BFF;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Стили для блока с отзывами */
+.testimonials {
+    padding: 50px 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonials .review {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Стили для контактного блока */
+.contact {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px
+}
